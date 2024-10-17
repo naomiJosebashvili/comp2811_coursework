@@ -9,7 +9,6 @@ using namespace std;
 Quake::Quake(const string& tm, double lat, double lon, double dep, double mag):
   time(tm), latitude(lat), longitude(lon), depth(dep), magnitude(mag)
 {
-  // check latitude and longitude in allowed ranges
   if (latitude > 90 || latitude < -90) {
     throw std::invalid_argument("Latitude must be between -90 and +90");
   }
